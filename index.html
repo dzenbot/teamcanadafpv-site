@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Canada FPV</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body, html {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+          overflow: hidden;
+        }
+
+        .bkgd {
+          position: relative;
+          height: 100vh;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: background-image 0.5s ease-in-out;
+        }
+
+        .bkgd::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(28, 26, 26, 0.9);
+          z-index: 1;
+        }
+
+        .content {
+          position: relative;
+          z-index: 2;
+          text-align: center;
+          padding: 20px;
+        }
+
+        .tcfpv-logo {
+          max-width: 800px;
+          min-width: 300px;
+          width: 50%;
+          height: auto;
+          margin-top: 25%;
+          filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+          user-select: none;
+        }
+
+        .sub-title {
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 300;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          user-select: none;
+        }
+
+        .sponsors {
+          margin-top: 20%;
+          padding: 3rem 1rem 4rem;
+        }
+
+        .logos-row {
+          padding: 2rem 1rem 1rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 2.5rem;
+        }
+
+        .logos-row img {
+          height: 45px;
+          width: auto;
+          filter: brightness(0.95) contrast(1.05);
+          transition: transform 0.25s ease, filter 0.25s ease;
+          user-select: none;
+        }
+
+        .logos-row a:hover img {
+          filter: brightness(0.5);
+        }
+
+        .social img {
+          height: 30px;
+        }
+
+        main {
+          flex: 1; /* takes up remaining vertical space */
+        }
+
+        footer {
+          color: #b0b0b0;
+          padding: 1.5rem 0;
+          font-size: 0.9rem;
+          text-align: center;
+          position: relative;
+          z-index: 2;
+          user-select: none;
+        }
+
+    </style>
+</head>
+<body class="bkgd" id="bkgd">
+
+    <main class="content">
+        <img src="images/tcfpv.png" alt="Team Canada FPV Logo" class="tcfpv-logo">
+
+        <div class="sponsors">
+          <p class="sub-title">Proudly sponsored by</p>
+          <div class="logos-row">
+            <a href="https://gemfanhobby.com" target="_blank" rel="noopener">
+              <img src="images/gemfan.png">
+            </a>
+            <a href="https://www.rcbattery.com" target="_blank" rel="noopener">
+              <img src="images/rcbattery.png">
+            </a>
+            <a href="https://team-blacksheep.com" target="_blank" rel="noopener">
+              <img src="images/tbs.png">
+            </a>
+            <a href="https://radiomasterrc.com" target="_blank" rel="noopener">
+              <img src="images/radiomaster.png">
+            </a>
+          </div>
+        </div>
+
+      
+    </main>
+
+    <footer>
+       <p class="sub-title">Contact or Follow us</p>
+        <div class="logos-row social">
+            <a href="mailto:contact@teamcanadafpv.org" target="_blank" rel="noopener">
+              <img src="images/social-email.png">
+            </a>
+            <a href="https://www.instagram.com/teamcanada.fpv" target="_blank" rel="noopener">
+              <img src="images/social-insta.png">
+            </a>
+            <a href="https://www.facebook.com/TeamCanadaFPV/" target="_blank" rel="noopener">
+              <img src="images/social-fb.png">
+            </a>
+            <a href="https://www.youtube.com/@TeamCanadaFPV" target="_blank" rel="noopener">
+              <img src="images/social-yt.png">
+            </a>
+        </div>
+      <p>© <script>document.write(new Date().getFullYear())</script> Team Canada FPV</p>
+    </footer>
+
+    <script>
+        // Array of background image URLs
+        const backgrounds = [
+            'images/background1.jpg',
+            'images/background2.jpg',
+            'images/background3.jpg',
+            'images/background4.jpg',
+            'images/background5.jpg',
+            'images/background6.jpg',
+        ];
+
+        // Select a random background on page load
+        function setRandomBackground() {
+            const randomIndex = Math.floor(Math.random() * backgrounds.length);
+            const bkgd = document.getElementById('bkgd');
+            bkgd.style.backgroundImage = `url('${backgrounds[randomIndex]}')`;
+        }
+
+        // Set background when page loads
+        setRandomBackground();
+    </script>
+</body>
+</html>
