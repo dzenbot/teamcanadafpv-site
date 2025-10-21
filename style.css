@@ -35,7 +35,7 @@ body, html {
 
 .bkgd::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -51,13 +51,14 @@ body, html {
     padding: 20px;
   }
 
-.tcfpv-logo {
-    max-width: 800px;
-    min-width: 300px;
+.main-logo {
+    max-width: 600px;
+    min-width: 400px;
     width: 50%;
     height: auto;
     margin-top: 25%;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    opacity: 90%;
     user-select: none;
   }
 
@@ -77,7 +78,7 @@ body, html {
   }
 
 .logos-row {
-    padding: 2rem 1rem 1rem;
+    padding: 2rem 5rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
