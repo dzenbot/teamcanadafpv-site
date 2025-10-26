@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#1b1a19">
+
     <meta property="og:image" content="/images/og-preview.jpg">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Team Canada FPV">
     <meta property="og:description" content="Promoting FPV drone racing and enabling national talent to compete internationally.">
+
     <link rel="stylesheet" href="style.css">
     <title>Team Canada FPV</title>
-</head>
-<body class="bkgd" id="bkgd">
+  </head>
 
+  <body class="bkgd" id="bkgd">
     <main class="content">
-        <img src="images/main-logo.png" class="main-logo">
+      <img src="images/main-logo.png" class="main-logo" alt="Team Canada FPV Logo">
 
-        <div class="sponsors">
-          <p class="sub-title">Proudly sponsored by</p>
-          <div class="logos-row">
-            <a href="https://gemfanhobby.com" target="_blank" rel="noopener">
-              <img src="images/gemfan.png">
-            </a>
-            <a href="https://www.rcbattery.com" target="_blank" rel="noopener">
-              <img src="images/rcbattery.png">
-            </a>
-            <a href="https://team-blacksheep.com" target="_blank" rel="noopener">
-              <img src="images/tbs.png">
-            </a>
-            <a href="https://radiomasterrc.com" target="_blank" rel="noopener">
-              <img src="images/radiomaster.png">
-            </a>
-          </div>
+      <div class="sponsors">
+        <p class="sub-title">Proudly sponsored by</p>
+        <div class="logos-row">
+          <a href="https://gemfanhobby.com" target="_blank" rel="noopener">
+            <img src="images/gemfan.png" alt="Gemfan">
+          </a>
+          <a href="https://www.rcbattery.com" target="_blank" rel="noopener">
+            <img src="images/rcbattery.png" alt="RCBattery">
+          </a>
+          <a href="https://team-blacksheep.com" target="_blank" rel="noopener">
+            <img src="images/tbs.png" alt="Team BlackSheep">
+          </a>
+          <a href="https://radiomasterrc.com" target="_blank" rel="noopener">
+            <img src="images/radiomaster.png" alt="RadioMaster">
+          </a>
         </div>
-
-      
+      </div>
     </main>
 
     <footer>
-       <p class="sub-title">Contact or Follow us</p>
-        <div class="logos-row social">
-            <a href="mailto:contact@teamcanadafpv.org" target="_blank" rel="noopener">
-              <img src="images/social-email.png">
-            </a>
-            <a href="https://www.instagram.com/teamcanada.fpv" target="_blank" rel="noopener">
-              <img src="images/social-insta.png">
-            </a>
-            <a href="https://www.facebook.com/TeamCanadaFPV/" target="_blank" rel="noopener">
-              <img src="images/social-fb.png">
-            </a>
-            <a href="https://www.youtube.com/@TeamCanadaFPV" target="_blank" rel="noopener">
-              <img src="images/social-yt.png">
-            </a>
-        </div>
+      <p class="sub-title">Contact & Social</p>
+      <div class="logos-row social">
+        <a href="mailto:contact@teamcanadafpv.org" target="_blank" rel="noopener">
+          <img src="images/social-email.png" alt="Email">
+        </a>
+        <a href="https://www.instagram.com/teamcanada.fpv" target="_blank" rel="noopener">
+          <img src="images/social-insta.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/TeamCanadaFPV/" target="_blank" rel="noopener">
+          <img src="images/social-fb.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/@TeamCanadaFPV" target="_blank" rel="noopener">
+          <img src="images/social-yt.png" alt="YouTube">
+        </a>
+      </div>
+
       <p>© <script>document.write(new Date().getFullYear())</script> Team Canada FPV</p>
     </footer>
 
     <script>
-        // Array of background image URLs
-        const backgrounds = [
-            'images/background1.jpg',
-            'images/background2.jpg',
-            'images/background3.jpg',
-            'images/background4.jpg',
-            'images/background5.jpg',
-            'images/background6.jpg',
-        ];
+      // Array of background image URLs
+      const backgrounds = [
+        'images/background1.jpg',
+        'images/background2.jpg',
+        'images/background3.jpg',
+        'images/background4.jpg',
+        'images/background5.jpg',
+        'images/background6.jpg',
+        'images/background7.jpg',
+        'images/background8.jpg',
+        'images/background9.jpg',
+      ];
 
-        // Select a random background on page load
-        function setRandomBackground() {
-            const randomIndex = Math.floor(Math.random() * backgrounds.length);
-            const bkgd = document.getElementById('bkgd');
-            bkgd.style.backgroundImage = `url('${backgrounds[randomIndex]}')`;
-        }
+      // Select a random background on page load
+      function setRandomBackground() {
+        const randomIndex = Math.floor(Math.random() * backgrounds.length);
+        const bkgd = document.getElementById('bkgd');
+        bkgd.style.backgroundImage = `url('${backgrounds[randomIndex]}')`;
+      }
 
-        // Set background when page loads
-        setRandomBackground();
+      // Set background when page loads
+      setRandomBackground();
     </script>
-</body>
+  </body>
 </html>
