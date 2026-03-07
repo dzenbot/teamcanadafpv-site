@@ -14,6 +14,15 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Team Canada FPV</title>
+
+    <script>
+      const host = window.location.hostname.toLowerCase();
+      const path = window.location.pathname.toLowerCase();
+
+      if (host === 'wdcc2026.teamcanadafpv.org' || path.startsWith('/wdcc2026')) {
+        window.location.replace('https://app.hi.events/event/6506/drone-world-cup-canada-2026');
+      }
+    </script>
   </head>
 
   <body class="bkgd" id="bkgd">
