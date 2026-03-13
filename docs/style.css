@@ -50,12 +50,12 @@ body {
 }
 
 .main-logo {
-  max-width: 600px;
-  min-width: 400px;
-  width: 50%;
+  max-width: 1024px;
+  min-width: 1024px;
+  width: 25%;
   height: auto;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-  opacity: 90%;
+  opacity: 100%;
   user-select: none;
 }
 
